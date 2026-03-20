@@ -1,0 +1,24 @@
+{
+  "expo": {
+    "name": "hälsoPilot",
+    "slug": "halsopilot",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "backgroundColor": "#3D7A8A"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.halsopilot.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#3D7A8A"
+      },
+      "package": "com.halsopilot.app"
+    },
+    "plugins": []
+  }
+}
