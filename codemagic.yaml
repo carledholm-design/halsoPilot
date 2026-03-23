@@ -10,9 +10,7 @@ workflows:
       - name: Install Expo CLI
         script: npm install -g expo-cli eas-cli
       - name: Prebuild Android
-        script: npx expo prebuild --platform android --clean --no-install
-      - name: Show build.gradle
-        script: cat android/app/build.gradle
+        script: npx expo prebuild --platform android --clean
       - name: Build Android APK
         script: |
           cd android
