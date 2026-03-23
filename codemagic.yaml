@@ -11,9 +11,8 @@ workflows:
         script: npm install -g expo-cli eas-cli
       - name: Prebuild Android
         script: npx expo prebuild --platform android --clean --no-install
-      - name: Fix package name
-        script: |
-          sed -i '' 's/applicationId ""/applicationId "com.halsopilot.app"/g' android/app/build.gradle
+      - name: Show build.gradle
+        script: cat android/app/build.gradle
       - name: Build Android APK
         script: |
           cd android
