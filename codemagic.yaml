@@ -13,7 +13,7 @@ workflows:
         script: npx expo prebuild --platform android --clean --no-install
       - name: Fix package name
         script: |
-          sed -i 's/applicationId ""/applicationId "com.halsopilot.app"/g' android/app/build.gradle
+          sed -i '' 's/applicationId ""/applicationId "com.halsopilot.app"/g' android/app/build.gradle
       - name: Build Android APK
         script: |
           cd android
