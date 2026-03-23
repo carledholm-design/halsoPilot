@@ -1,0 +1,15 @@
+workflows:
+  react-native-android:
+    name: hälsoPilot Android
+    max_build_duration: 60
+    environment:
+      node: 18.17.0
+    scripts:
+      - name: Install dependencies
+        script: npm install
+      - name: Build Android
+        script: |
+          cd android
+          ./gradlew assembleDebug
+    artifacts:
+      - android/app/build/outputs/**/*.apk
