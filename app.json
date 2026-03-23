@@ -4,7 +4,6 @@
     "slug": "halsopilot",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
     "userInterfaceStyle": "automatic",
     "splash": {
       "backgroundColor": "#3D7A8A"
@@ -14,11 +13,10 @@
       "bundleIdentifier": "com.halsopilot.app"
     },
     "android": {
+      "package": "com.halsopilot.app",
       "adaptiveIcon": {
         "backgroundColor": "#3D7A8A"
-      },
-      "package": "com.halsopilot.app"
-    },
-    "plugins": []
+      }
+    }
   }
 }
