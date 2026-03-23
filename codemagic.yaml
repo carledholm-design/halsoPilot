@@ -4,6 +4,7 @@ workflows:
     max_build_duration: 60
     environment:
       node: 18.17.0
+      java: 17
     scripts:
       - name: Install dependencies
         script: npm install
@@ -11,6 +12,9 @@ workflows:
         script: npm install -g expo-cli eas-cli
       - name: Prebuild Android
         script: npx expo prebuild --platform android --clean
+      - name: Pin Gradle version
+        script: |
+          sed -i '' 's|gradle-8.*-all.zip|gradle-8.3-all.zip|g' android/gradle/wrapper/gradle-wrapper.properties
       - name: Build Android APK
         script: |
           cd android
