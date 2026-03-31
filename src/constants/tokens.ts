@@ -1,6 +1,5 @@
 // hälsoPilot Design Tokens
 // Swedish palette — locked. Zero hardcoded colors anywhere else.
-
 export const Colors = {
   primary:      '#3D7A8A',
   primaryC:     '#C2E8F0',
@@ -31,4 +30,4 @@ export const Spacing = {
   xl:   20,
   xxl:  28,
   xxxl: 40,
-} a
+} as const;
