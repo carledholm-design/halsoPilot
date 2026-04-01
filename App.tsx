@@ -20,7 +20,6 @@ export default function App() {
     </GestureHandlerRootView>
   );
 }
-
 const styles = StyleSheet.create({
   root: { flex: 1 },
 });
