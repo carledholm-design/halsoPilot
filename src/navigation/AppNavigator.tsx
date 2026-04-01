@@ -1,14 +1,11 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { StyleSheet, Text } from 'react-native';
-import { Colors, Typography } from '@/constants/tokens';
-import {
-  TodayScreen,
-  VitalsScreen,
-} from '@/screens/Placeholders';
+import { Colors, Typography } from '../constants/tokens';
+import { TodayScreen, VitalsScreen } from '../screens/Placeholders';
 import { HealthNavigator } from './HealthNavigator';
 import { MedsNavigator, WalletNavigator } from './Navigators';
-import type { AppTabParamList } from '@/types';
+import type { AppTabParamList } from '../types';
 
 const Tab = createBottomTabNavigator<AppTabParamList>();
 
@@ -36,10 +33,10 @@ export function AppNavigator() {
         ),
       })}
     >
-      <Tab.Screen name="Today"  component={TodayScreen}    options={{ title: 'Today'  }} />
-      <Tab.Screen name="Health" component={HealthNavigator} options={{ title: 'Health' }} />
-      <Tab.Screen name="Meds"   component={MedsNavigator}  options={{ title: 'Meds'   }} />
-      <Tab.Screen name="Vitals" component={VitalsScreen}   options={{ title: 'Vitals' }} />
+      <Tab.Screen name="Today"  component={TodayScreen}     options={{ title: 'Today'  }} />
+      <Tab.Screen name="Health" component={HealthNavigator}  options={{ title: 'Health' }} />
+      <Tab.Screen name="Meds"   component={MedsNavigator}   options={{ title: 'Meds'   }} />
+      <Tab.Screen name="Vitals" component={VitalsScreen}    options={{ title: 'Vitals' }} />
       <Tab.Screen name="Wallet" component={WalletNavigator} options={{ title: 'Wallet' }} />
     </Tab.Navigator>
   );
