@@ -6,8 +6,8 @@ import {
   CareTeamScreen,
   LabsScreen,
   AppointmentsScreen,
-} from '@/screens/Placeholders';
-import type { HealthStackParamList } from '@/types';
+} from '../screens/Placeholders';
+import type { HealthStackParamList } from '../types';
 
 const Stack = createNativeStackNavigator<HealthStackParamList>();
 
