@@ -6,8 +6,8 @@ import {
   SignInScreen,
   SignUpScreen,
   ResetPasswordScreen,
-} from '@/screens/Placeholders';
-import type { AuthStackParamList } from '@/types';
+} from '../screens/Placeholders';
+import type { AuthStackParamList } from '../types';
 
 const Stack = createNativeStackNavigator<AuthStackParamList>();
 
