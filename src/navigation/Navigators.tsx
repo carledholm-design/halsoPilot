@@ -7,12 +7,10 @@ import {
   CardDetailScreen,
   EmergencyCardScreen,
   OnboardingScreen,
-} from '@/screens/Placeholders';
-import type { MedsStackParamList, WalletStackParamList } from '@/types';
+} from '../screens/Placeholders';
+import type { MedsStackParamList, WalletStackParamList } from '../types';
 
-// ── Meds ──────────────────────────────────────────────────────────────
 const MedsStack = createNativeStackNavigator<MedsStackParamList>();
-
 export function MedsNavigator() {
   return (
     <MedsStack.Navigator screenOptions={{ headerShown: false, animation: 'slide_from_right' }}>
@@ -22,9 +20,7 @@ export function MedsNavigator() {
   );
 }
 
-// ── Wallet ────────────────────────────────────────────────────────────
 const WalletStack = createNativeStackNavigator<WalletStackParamList>();
-
 export function WalletNavigator() {
   return (
     <WalletStack.Navigator screenOptions={{ headerShown: false, animation: 'slide_from_right' }}>
@@ -35,7 +31,6 @@ export function WalletNavigator() {
   );
 }
 
-// ── Onboarding ────────────────────────────────────────────────────────
 export function OnboardingNavigator() {
   return <OnboardingScreen />;
 }
